@@ -1,5 +1,5 @@
 I have created a BDD Cucumber framework for the given tasks.
-You can go to package.json to line number 6 ""scripts": "cypress run --browser firefox"," and change the browser. for now it accepts chrome/firefox/electron.
+You can go to package.json to line number 6 "scripts": "cypress run --browser firefox" and change the browser. for now it accepts chrome/firefox/electron.
 Below are paths for important folders:
 1. Feature Files: cypress/integration/test.feature
 2. StepDefinations: cypress/integration/test/test.js
