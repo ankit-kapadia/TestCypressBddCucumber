@@ -1,0 +1,30 @@
+{
+    "name": "TestAutomationCypress",
+    "main": "index.js",
+    "scripts": {
+        "clean:reports": "rm -R -f cypress/reports && rm -R -f reports && mkdir cypress/reports && mkdir cypress/reports/mochareports",
+        "pretest": "npm run clean:reports",
+        "scripts": "cypress run --browser firefox",
+        "posttest": "node cucumber-html-report.js",
+        "test": "npm install && npm run scripts || :"
+    },
+    "devDependencies": {
+        "cypress": "9.1.1",
+        "cypress-cucumber-preprocessor": "*",
+        "cypress-mochawesome-reporter": "*",
+        "cypress-plugin-tab": "*",
+        "multiple-cucumber-html-reporter": "*"
+    },
+    "cypress-cucumber-preprocessor": {
+        "nonGlobalStepDefinitions": true,
+        "cucumberJson": {
+            "generate": true,
+            "outputFolder": "cypress/cucumber-json",
+            "filePrefix": "",
+            "fileSuffix": ".cucumber"
+        }
+    },
+    "dependencies": {
+        "cypress-parallel": "*"
+    }
+}

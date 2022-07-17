@@ -1,0 +1,162 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Testing Scenarios",
+    "line": 1,
+    "id": "testing-scenarios",
+    "tags": [],
+    "uri": "test.feature",
+    "elements": [
+      {
+        "id": "testing-scenarios;testing-multimodal-url",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Testing multiModal url",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "User navigates to \"multiModal\" url",
+            "result": {
+              "status": "passed",
+              "duration": 1613000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 5,
+            "name": "User checks console for any errors",
+            "result": {
+              "status": "passed",
+              "duration": 27000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "User checks the response status of \"multiModal\" page to be 200",
+            "result": {
+              "status": "passed",
+              "duration": 149000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "User checks all the links on the page",
+            "result": {
+              "status": "passed",
+              "duration": 12773000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "testing-scenarios;testing-htmlcss-url",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "Testing htmlCSS url",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "User navigates to \"htmlCSS\" url",
+            "result": {
+              "status": "passed",
+              "duration": 511000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 5,
+            "name": "User checks console for any errors",
+            "result": {
+              "status": "passed",
+              "duration": 8000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "User checks the response status of \"htmlCSS\" page to be 200",
+            "result": {
+              "status": "passed",
+              "duration": 137000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "User checks all the links on the page",
+            "result": {
+              "status": "passed",
+              "duration": 30383000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "testing-scenarios;testing-bad-url",
+        "keyword": "Scenario",
+        "line": 13,
+        "name": "Testing bad url",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "User navigates to \"bad\" url",
+            "result": {
+              "status": "passed",
+              "duration": 325000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 5,
+            "name": "User checks console for any errors",
+            "result": {
+              "status": "passed",
+              "duration": 6000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "User checks the response status of \"bad\" page to be 404",
+            "result": {
+              "status": "passed",
+              "duration": 403000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "User checks all the links on the page",
+            "result": {
+              "status": "failed",
+              "error_message": "AssertionError: Skip: expected 404 to equal 200\n    + expected - actual\n\n    -404\n    +200\n\n    [2]</</</<@https://www.w3.org/__cypress/tests?p=cypress/integration/test.feature:69:43\n    ../driver/src/cy/commands/asserting.ts/__webpack_exports__.default/shouldFnWithCallback/<@https://www.w3.org/__cypress/runner/cypress_runner.js:154644:17\n    tryCatcher@https://www.w3.org/__cypress/runner/cypress_runner.js:13196:23\n    ../../node_modules/bluebird/js/release/method.js/module.exports/Promise.try@https://www.w3.org/__cypress/runner/cypress_runner.js:10470:29\n    shouldFnWithCallback@https://www.w3.org/__cypress/runner/cypress_runner.js:154642:60\n    shouldFn@https://www.w3.org/__cypress/runner/cypress_runner.js:154654:35\n    should@https://www.w3.org/__cypress/runner/cypress_runner.js:154774:23\n    ../driver/src/cypress/cy.ts/create/addCommand/wrapByType/<@https://www.w3.org/__cypress/runner/cypress_runner.js:172103:23\n    ../driver/src/cypress/command_queue.ts/create/runCommand/<@https://www.w3.org/__cypress/runner/cypress_runner.js:170703:17\n    tryCatcher@https://www.w3.org/__cypress/runner/cypress_runner.js:13196:23\n    ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromiseFromHandler@https://www.w3.org/__cypress/runner/cypress_runner.js:11131:31\n    ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromise@https://www.w3.org/__cypress/runner/cypress_runner.js:11188:18\n    ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromiseCtx@https://www.w3.org/__cypress/runner/cypress_runner.js:11225:10\n    _drainQueueStep@https://www.w3.org/__cypress/runner/cypress_runner.js:7907:12\n    _drainQueue@https://www.w3.org/__cypress/runner/cypress_runner.js:7896:24\n    ../../node_modules/bluebird/js/release/async.js/</Async.prototype._drainQueues@https://www.w3.org/__cypress/runner/cypress_runner.js:7912:16\n    ../../node_modules/bluebird/js/release/async.js/</Async/this.drainQueues@https://www.w3.org/__cypress/runner/cypress_runner.js:7782:14\n"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

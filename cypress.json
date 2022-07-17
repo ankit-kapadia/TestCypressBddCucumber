@@ -1,0 +1,18 @@
+{
+    "testFiles": "**/*.{feature,features}",
+    "env" : {
+        "bad": "https://www.w3.org/standards/badpage",
+        "multiModal": "https://www.w3.org/standards/webofdevices/multimodal",
+        "htmlCSS": "https://www.w3.org/standards/webdesign/htmlcss" 
+    },
+    "reporter": "cypress-mochawesome-reporter",
+    "reporterOptions": {
+        "reportDir": "cypress/reports",
+        "charts": true,
+        "reportPageTitle": "My Test Suite",
+        "embeddedScreenshots": true,
+        "inlineAssets": true
+    },
+    "video": true,
+    "defaultCommandTimeout": 10000
+}
