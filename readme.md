@@ -14,7 +14,7 @@ To execute on docker please follow the following steps:
 2. Open Docker once on local.
 3. Execute the following commands: 
     a. npm install
-    b. docker run -it -v $PWD:<PresentFolderName> -w <<PresentFolderName>> -e cypress cypress/included:9.1.1
+    b. docker run -it -v $PWD:<Present_Folder_Name> -w <Present_Folder_Name> -e cypress cypress/included:9.1.1
 
 
 Note: The tests will run in headless mode.
