@@ -18,3 +18,4 @@ To execute on docker please follow the following steps:
 
 
 Note: The tests will run in headless mode.
+In the Spec file I have commented a section in the step which goes through the entire page and navigates to each link to check the link. This is commented as in the assessment its said its not needed.

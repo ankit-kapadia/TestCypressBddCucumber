@@ -20,14 +20,14 @@ Then('User checks the response status of {string} page to be {int}', (urlName, r
 
 Then('User checks all the links on the page', () => {
     //Looping through each link/image
-    cy.get("[href]:not([href*='mailto:'])").each($el => {
-        const message = $el.text();
-        expect($el, message).to.have.attr("href").not.contain("undefined");
-        cy.log($el.attr('href'));
-        cy.request({url: $el.prop('href'), failOnStatusCode: false}).should((response) => {
-            expect(response.status, message).to.eq(200);
-        });
-    });
+    // cy.get("[href]:not([href*='mailto:'])").each($el => {
+    //     const message = $el.text();
+    //     expect($el, message).to.have.attr("href").not.contain("undefined");
+    //     cy.log($el.attr('href'));
+    //     cy.request({url: $el.prop('href'), failOnStatusCode: false}).should((response) => {
+    //         expect(response.status, message).to.eq(200);
+    //     });
+    // });
 
     //without looping through each link/image
     cy.get('*[href="#undefined"]').should('have.length', 0)
