@@ -1,5 +1,5 @@
 I have created a BDD Cucumber framework for the given tasks.
-You can go to package.json to line number 6 ""scripts": "cypress run --browser firefox"," and change the browser. for now it accepts chrome/firefox/electron.
+You can go to package.json to line number 6 "scripts": "cypress run --browser firefox" and change the browser. for now it accepts chrome/firefox/electron.
 Below are paths for important folders:
 1. Feature Files: cypress/integration/test.feature
 2. StepDefinations: cypress/integration/test/test.js
@@ -14,7 +14,7 @@ To execute on docker please follow the following steps:
 2. Open Docker once on local.
 3. Execute the following commands: 
     a. npm install
-    b. docker run -it -v $PWD:<PresentFolderName> -w <<PresentFolderName>> -e cypress cypress/included:9.1.1
+    b. docker run -it -v $PWD:<Present_Folder_Name> -w <Present_Folder_Name> -e cypress cypress/included:9.1.1
 
 
 Note: The tests will run in headless mode.
